@@ -55,14 +55,14 @@ public class Account {
 		}
 	}
 
-	public void Withdraw(Double amount) {
+	public Double Withdraw(Double amount) {
 		if (amount > withdrawLimit) {
 			throw new WithdrawExecpetion("The amount exceeds withdraw limit");
 		}
 		if (amount > balance) {
 			throw new WithdrawExecpetion("Not enough balance");
 		}
-		balance -= amount;
+		return balance -= amount;
 	}
 
 }
