@@ -16,7 +16,7 @@ public class DepositUnit {
 	Account Dep = new Account(00, "teste", 0.0, 0.0);
 
 	// @Test(expected = SaldoInsuficienteException.class)
-
+/*
 	@Test(expected = RuntimeException.class)
 	public void TesteDepExecption() {
 		try {
@@ -26,7 +26,7 @@ public class DepositUnit {
 			assertEquals("Depósito não pode ser nullu", e.getMessage());
 		}
 	}
-
+*/
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	

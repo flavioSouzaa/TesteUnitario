@@ -27,4 +27,14 @@ public class WithdrawUnit {
 		thrown.expectMessage("The amount exceeds withdraw limit");
 		account.Withdraw(300.0);
 	}
+	
+	
+	@Test
+	public void SaqueMaiorQueSaldo() {
+		Account acc1 = new Account(900, "Teste", 10.0, 100.0);
+		thrown.expect(WithdrawExecpetion.class);
+		thrown.expectMessage("Not enough balance");
+		acc1.Withdraw(50.0);
+	}
+	
 }
