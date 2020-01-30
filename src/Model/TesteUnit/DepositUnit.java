@@ -33,7 +33,7 @@ public class DepositUnit {
 	@Test
 	public void DepositoComExcecao() {
 		thrown.expect(RuntimeException.class);
-		thrown.expectMessage("Depósito não pode ser nullu");
+		thrown.expectMessage("Deposit cannot be null");
 		account.Deposit(0.0);
 	}
 	

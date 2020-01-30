@@ -15,7 +15,7 @@ public class Program {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		/*
+		
 		try {
 			System.out.print("Enter account data");
 			System.out.print("Number:");
@@ -52,6 +52,5 @@ public class Program {
 			System.out.println("Falha no Depósito: " + e.getMessage());
 		}
 
-*/
 	}
 }

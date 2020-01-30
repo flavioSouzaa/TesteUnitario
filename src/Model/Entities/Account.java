@@ -49,7 +49,7 @@ public class Account {
 	public Double Deposit(Double amount) {
 
 		if (amount <= 0) {
-			throw new RuntimeException("Depósito não pode ser nullu");
+			throw new RuntimeException("Deposit cannot be null");
 		} else {
 			return balance += amount;
 		}
